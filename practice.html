@@ -1,0 +1,78 @@
+<div class="w-[400px] max-h-[200px]  bg-white p-5 space-y-5">
+<div>
+    <img src="./assets/about.png" alt="">
+    <h2 class="text-xl font-bold pt-4 pb-2">Mango Tree</h2>
+    <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</p>
+</div>
+
+<div class="flex justify-between">
+    <button class="bg-green-200  rounded-2xl px-4 py-1">Fruit Tree</button>
+    <p class="text-xl font-bold"><span class="font-bold text-xl ">500</span>৳</p>
+</div>
+<button class="bg-green-700 w-full text-white text-xl rounded-3xl py-3">Add to Cart</button>
+</div>
+</div>
+<!-- card container -->
+  <div class="w-11/12 mx-auto grid justify-items-start grid-cols-12 gap-8 border">
+
+            <!-- categories column -->
+
+<div class=" col-span-2 border mx-auto ">
+    <h1 class="text-xl font-bold">Categories</h1>
+</div>
+
+<!-- middle/card column -->
+
+<div id="card-container" class="col-span-8 border mx-auto ">
+
+    <div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+       />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">
+      Card Title
+    </h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-between">
+      <div class="badge badge-outline">
+        Fruit tree
+      </div>
+      <div>
+        <p><span>500</span>Tk</p>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<!-- Cart column  -->
+
+<div class="col-span-2 border mx-auto ">
+    <h1 class="text-xl font-bold">Your Cart</h1>
+</div>
+        </div>
+
+        <!-- number of trees -->
+          <div>
+            <h1>Number of Trees</h1>
+            <select id="bank" class="select !rounded-4xl !w-full">
+              <option class="!bg-gray-500"></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+
+
+          <!--  -->
+           <img src="${plant.image}" alt="${plant.name}">
+        <div class="card-content">
+          <h2>${plant.name}</h2>
+          <p>${plant.description || 'No description provided.'}</p>
+          <p>Category: ${plant.category || 'Unknown'}</p>
+          <p class="price">Price: ৳${plant.price ?? 'N/A'}</p>
+        </div>
