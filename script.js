@@ -217,13 +217,13 @@ function renderCart() {
         div.innerHTML = `
             <div>
                 <p class="font-bold">${item.name} </p>
-                <p>${item.totalPrice.toFixed(2)} Tk  (x${item.quantity})</p>
+                <p>${item.totalPrice} Tk  (x${item.quantity})</p>
             </div>
             <button onclick="removeFromCart(${index})" class="text-red-500 font-bold hover:text-red-700 text-xl hover:cursor-pointer">&times;</button>
         `;
         cartItemsContainer.append(div);
     });
 
-    totalPriceEl.textContent = total.toFixed(2);
+    totalPriceEl.textContent = total;
 }
 
