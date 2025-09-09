@@ -36,7 +36,7 @@ plants.forEach(plant=>{
             <h2 onclick="loadPlantDetail(${plant.id})" class="text-xl font-bold hover:cursor-pointer">${plant.name}</h2>
             <p>${plant.description}</p>
             <div class="card-actions justify-between space-y-2">
-              <div class="bg-green-200 rounded-2xl px-3 py-2">${plant.category}</div>
+              <div class="bg-green-200 rounded-2xl px-2 py-2">${plant.category}</div>
               <div>
                 <p class="text-xl font-bold"><span class="price">${plant.price}</span> Tk</p>
               </div>
@@ -128,7 +128,7 @@ cards.forEach(card=>{
             <h2 onclick="loadPlantDetail(${card.id})" class="text-xl font-bold hover:cursor-pointer">${card.name}</h2>
             <p>${card.description}</p>
             <div class="card-actions justify-between space-y-2">
-              <div class="bg-green-200 rounded-2xl px-3 py-2">${card.category}</div>
+              <div class="bg-green-200 rounded-2xl px-2 py-2">${card.category}</div>
               <div>
                 <p class="text-xl font-bold"><span class="price">${card.price}</span> Tk</p>
               </div>

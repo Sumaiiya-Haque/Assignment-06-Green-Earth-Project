@@ -27,11 +27,11 @@
 
 <body>
     <header class="max-w-full bg-green-700 ">
-        <nav class="flex justify-between items-center py-5 w-11/12 mx-auto">
+        <nav class="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between justify-center items-center py-5 w-11/12 mx-auto">
             <div>
                 <h1 class="text-2xl text-white font-bold">Green Earth</h1>
             </div>
-            <div class=" flex justify-evenly flex-col sm:flex-row sm:gap-10  text-white">
+            <div class=" flex justify-evenly gap-10  text-white">
                 <h1>About</h1>
                 <h1>Gallery</h1>
                 <h1>Plant a Tree</h1>
@@ -42,19 +42,21 @@
         </nav>
 
         <!-- banner -->
-        <div class="flex justify-between items-center bg-green-100 min-h-[300px]">
-            <div class="hidden sm:block">
+        <div class="sm:flex flex-col lg:flex-row justify-between items-end bg-green-100 min-h-[300px]">
+            <div class="hidden sm:block items-end ">
                 <img src="./assets/hero-leaf1.png" alt="">
             </div>
-            <div class="text-center space-y-5">
-                <h1 class="text-5xl font-bold">Plant a Tree, Grow a Future</h1>
-                <p class="font-xl ">Join our mission to plant 1 million trees and make the Earth greener for future <br>
+            <div class="text-center flex flex-col justify-center items-center space-y-5 py-10">
+                <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+                <p class="font-xl ">Join our mission to plant 1 million trees and make the Earth greener for future
                     generations.</p>
-                <button class=" bg-yellow-400 font-semibold text-green-600 px-5 py-3  rounded-[50px]">Get
+              <div class="pb-0 lg:pb-6">
+                  <button class=" bg-yellow-400 font-semibold text-green-600 px-5 py-3 rounded-[50px]">Get
                     Involved</button>
+              </div>
             </div>
-            <div class="hidden sm:block">
-                <img src="./assets/hero-leaf2.png" alt="">
+            <div class="">
+                <img class="" src="./assets/hero-leaf2.png" alt="">
             </div>
         </div>
     </header>
