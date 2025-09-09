@@ -1,13 +1,27 @@
 const loadAllPlants=()=>{
-// manageSpinner(true);
+manageSpinner(true);
     fetch('https://openapi.programming-hero.com/api/plants')
     .then(res=>res.json())
     .then(data=>displayAllPlants(data.plants))
 }
 
+const manageSpinner=(status)=>{
+  console.log(status);
+if(status==true){
+  document.getElementById('spinner').classList.remove("hidden");
+  document.getElementById('card-container').classList.add("hidden")
+
+}else{
+   document.getElementById('card-container').classList.remove("hidden");
+  document.getElementById('spinner').classList.add("hidden")
+}
+};
+
+
 loadAllPlants();
 
 const displayAllPlants=(plants)=>{
+  manageSpinner(false);
 //  manageSpinner(true);
 const cardContainer=document.getElementById('card-container')
 cardContainer.innerHTML='';
@@ -33,19 +47,10 @@ plants.forEach(plant=>{
   `
    cardContainer.append(card)
 });
-// manageSpinner(false);
+
 };
 
-const manageSpinner=(status)=>{
-if(status==true){
-  document.getElementById('spinner').classList.remove("hidden");
-  document.getElementById('card-container').classList.add("hidden")
 
-}else{
-   document.getElementById('card-container').classList.remove("hidden");
-  document.getElementById('spinner').classList.add("hidden")
-}
-};
    
 
 const loadCategories = ()=>{
@@ -96,7 +101,7 @@ const removeActive=()=>{
 
 // load category card
 const loadCategoryCard=(id)=>{
-  // manageSpinner(true);
+  manageSpinner(true);
 const url=`https://openapi.programming-hero.com/api/category/${id}`
 fetch(url)
 .then(res=>res.json())
@@ -110,7 +115,7 @@ fetch(url)
 };
 
 const displayCategoryCard=(cards)=>{
-  // manageSpinner(true);
+  manageSpinner(false);
   // console.log(cards)
   const categoryCardContainer = document.getElementById('card-container')
   categoryCardContainer.innerHTML='';

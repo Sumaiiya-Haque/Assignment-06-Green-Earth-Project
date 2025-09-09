@@ -59,9 +59,9 @@
         </div>
     </header>
 <!-- spinner -->
-    <div id="spinner" class="flex justify-center items-center mt-10   hidden">
+    <!-- <div id="spinner" class="flex justify-center items-center mt-10 ">
          <span class="loading loading-bars loading-xl   "></span>
-    </div>
+    </div> -->
 
 
     <main class="bg-green-50">
@@ -73,7 +73,7 @@
         <div>
             <h1 class="text-3xl font-bold text-center my-10">Choose Your Trees</h1>
         </div>
-        <div class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 ">
+        <div id ="full-card" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 ">
 
 
             <!-- categories column -->
@@ -87,9 +87,11 @@
 
             <!-- middle/card column -->
 
-
-            <div id="card-container" class="col-span-8  grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <!-- spinner -->
+ <div id="spinner" class="col-span-8  grid  justify-center items-center ">
+         <span class="loading loading-bars loading-xl   "></span>
+    </div>
+            <div id="card-container" class="col-span-8  grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+               
 
 
                 <!-- card 1 -->
@@ -100,7 +102,7 @@
 
 
             <div id="cart-container" class="bg-white col-span-8 lg:col-span-2  ">
-                
+
                 <h2 class="text-xl font-bold ml-4 py-2"> Your Cart</h2>
 
                 <div id="cart-items" class="w-full mx-auto"></div>
